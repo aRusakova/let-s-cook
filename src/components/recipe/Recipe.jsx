@@ -30,13 +30,15 @@ function Recipe({ image, title, id, link }) {
 
   return (
     <>
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '18rem' }} className={link == "random" ? "random-card" : null}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
+          <div className="btn-group">
           <Button variant="primary" onClick={() => { setShow(true); getInstruction(id) }}>View recipe</Button>
           {link == "random" &&<Button variant="primary" onClick={nextRandomRecipe}>Next</Button>}
           {(link == "random" || link == "search") ? <Button variant="primary" onClick={() => addToFavorite({image, title, id})}>Like</Button> : ''}
+          </div>
         </Card.Body>
       </Card>
 

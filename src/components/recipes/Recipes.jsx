@@ -23,22 +23,21 @@ function Recipes() {
 
 
     return (
-      <>
-      {link == "random" ? <Recipe {...randomRecipe} link={link}/> :
+      <div className="recipe">
+      {link == "random" ? <div className="randomRecipe"><Recipe {...randomRecipe} link={link}/></div> :
        link == "favorites" ?
        <> 
        <div className="text">Your favorites recipes:</div>
-       <hr />
-       {favoriteRecipes.length ? favoriteRecipes.map(favoriteRecipe => <Recipe {...favoriteRecipe} link={link} /> ) :
-        <div className="textnull">You have not favorites recipes 😟</div>}
+       <div className="recipe-list">{favoriteRecipes.length ? favoriteRecipes.map(favoriteRecipe => <Recipe {...favoriteRecipe} link={link} />) :
+       <div className="textnull">You have not favorites recipes 😟</div>}</div>
         </> :
         link == "search" ? 
         <>
         <Search/>
-        {recipes.length ? recipes.map(recipe => <Recipe {...recipe} link={link} />) : ''}
+        <div className="recipe-list">{recipes.length ? recipes.map(recipe => <Recipe {...recipe} link={link} />) : ''}</div>
         </>
         : ''}
-      </>
+      </div>
     );
   }
   

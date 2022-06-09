@@ -2,8 +2,8 @@ function Main() {
     return (
       <div className="container2">
         <div className="textcontainer2">
-         Don 't know what to cook ?
-         Our service will help you !
+         <p>Don 't know what to cook ?</p>
+         <p>Our free service will help you !</p>
          </div>
       </div>
     );

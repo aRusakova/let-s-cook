@@ -21,9 +21,9 @@ function Search({link}) {
 
   
     return (
-      <>
+      <div className="searchContainer">
   <Form.Group className="mb-3">
-    <Form.Label>Choose the cuisine of the recipes : </Form.Label>
+    <Form.Label className="formText">Choose the cuisine of the recipes : </Form.Label>
     <Form.Select name="cuisine" onChange={changeHandler} value={form.cuisine}>
       <option>---</option>
       <option>American</option>
@@ -36,7 +36,7 @@ function Search({link}) {
       <option>Indian</option>
       <option>Mexican</option>
     </Form.Select>
-    <Form.Label>Choose the diet for which the recipes must be suitable : </Form.Label>
+    <Form.Label className="formText">Choose the diet for which the recipes must be suitable : </Form.Label>
     <Form.Select name="diet" onChange={changeHandler} value={form.diet}>
       <option>---</option>
       <option>Gluten Free</option>
@@ -45,7 +45,7 @@ function Search({link}) {
       <option>Vegan</option>
       <option>Paleo</option>
     </Form.Select>
-    <Form.Label>Choose the type of recipe : </Form.Label>
+    <Form.Label className="formText">Choose the type of recipe : </Form.Label>
     <Form.Select name="type" onChange={changeHandler} value={form.type}>
       <option>---</option>
       <option>main course</option>
@@ -56,20 +56,17 @@ function Search({link}) {
       <option>breakfast</option>
       <option>snack</option>
     </Form.Select>
-    <Form.Group className="mb-3">
-    <Form.Label>Add ingredients that should/must be used in the recipes</Form.Label>
+    <Form.Label className="formText">Add ingredients that should/must be used in the recipes</Form.Label>
     <Form.Control name="includeIngredients" onChange={changeHandler} value={form.includeIngredients} type="text" placeholder="for example: tomato,cheese"/>
   </Form.Group>
-  </Form.Group>
-  <Button 
+  <Button className="btn-search"
               variant="primary" 
               onClick={handleSave}
-              style={{margin: 'auto'}}
               >
              Search !
             </Button>
 
-</>
+</div>
     );
   }
   

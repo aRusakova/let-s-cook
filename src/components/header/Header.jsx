@@ -12,7 +12,7 @@ function Header() {
                     <Navbar.Brand style={{cursor: "pointer"}} onClick={()=>navigate('/')}>
                         <img
                             alt=""
-                            src="img/free-icon-chef-7674219.png"
+                            src="img/premium-icon-chef-730142.png"
                             width="30"
                             height="30"
                             className="d-inline-block align-top img"
