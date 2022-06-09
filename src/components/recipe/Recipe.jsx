@@ -1,12 +1,14 @@
-import { Button, Card, Modal } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getRecipeInsructionFromServer } from "../../redux/actions/recipeInstructionAction";
 import RecipesModal from "../recipesModal/RecipesModal";
+import { addFavoriteRecipes } from "../../redux/actions/favoriteRecipesAction";
+import { getRandomRecipeFromServer } from "../../redux/actions/randomRecipeAction";
 
 
 
-function Recipe({ image, title, id }) {
+function Recipe({ image, title, id, link }) {
 
   const dispatch = useDispatch();
 
@@ -14,11 +16,17 @@ function Recipe({ image, title, id }) {
 
   const recipeInstruction = useSelector(state => state.recipeInstruction);
 
+  const nextRandomRecipe = () => {
+        dispatch(getRandomRecipeFromServer());
+      }
+
   const getInstruction = (id) => {
     dispatch(getRecipeInsructionFromServer(id));
   }
 
-  
+  const addToFavorite = (recipe) => {
+    dispatch(addFavoriteRecipes(recipe))
+  }
 
   return (
     <>
@@ -27,6 +35,8 @@ function Recipe({ image, title, id }) {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Button variant="primary" onClick={() => { setShow(true); getInstruction(id) }}>View recipe</Button>
+          {link == "random" &&<Button variant="primary" onClick={nextRandomRecipe}>Next</Button>}
+          {(link == "random" || link == "search") ? <Button variant="primary" onClick={() => addToFavorite({image, title, id})}>Like</Button> : ''}
         </Card.Body>
       </Card>
 

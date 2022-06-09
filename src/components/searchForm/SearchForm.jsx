@@ -1,16 +1,14 @@
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getRecipesFromServer } from "../../redux/actions/recipesAction";
-import Recipe from "../recipe/Recipe";
 
-function Search() {
+
+function Search({link}) {
 
   const dispatch = useDispatch();
 
   const [form, setForm] = useState({});
-
-  const recipes = useSelector(state => state.recipes);
 
   const changeHandler = (e) => {
     setForm(prev=> ({...prev, [`${e.target.name}`]: e.target.value}));
@@ -70,8 +68,6 @@ function Search() {
               >
              Search !
             </Button>
-
-            {recipes.length ? recipes.map(recipe => <Recipe {...recipe} />) : <div>No recipes</div>}
 
 </>
     );

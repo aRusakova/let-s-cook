@@ -3,9 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
 import Header from './components/header/Header';
 import Main from './components/main/Main';
-import Search from './components/search/Search';
-import Random from './components/random/Random';
-import Favorites from './components/favorites/Favorites';
+import Recipes from './components/recipes/Recipes';
 
 function App() {
   return (
@@ -13,10 +11,7 @@ function App() {
       <Header/>
       <Routes>
        <Route path="/" element={<Main />} />
-       <Route path="/search" element={<Search />} />
-       <Route path="/random" element={<Random />} />
-       <Route path="/favorites" element={<Favorites />} /> 
-       
+       <Route path="/:link" element={<Recipes />} /> 
      </Routes>
     </div>
   );
