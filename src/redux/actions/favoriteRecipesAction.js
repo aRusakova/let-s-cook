@@ -6,7 +6,6 @@ export const getFavoriteRecipes = (recipes) => ({
 })
 
 export const addFavoriteRecipes = (recipe) => ({
-    
     type: ADD_FAVORITE_RECIPES,
     payload: recipe,
 })
