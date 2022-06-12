@@ -14,11 +14,15 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Реализован поиск и фильтрация по рецептам:
+Реализован поиск и фильтрация по рецептам :
 
 <img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.45.06.png" alt="">
+
+Во вкладке "Random recipe" отображаются рандомные рецепты :
+
+<img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.46.06.png" alt="">
  
-Есть возможность добавлять понравившиеся рецепты в избранное:
+Есть возможность добавлять понравившиеся рецепты в избранное :
 
 <img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.47.04.png" alt="">
 
