@@ -1,10 +1,10 @@
 <h1 align="center">Let's cook ! 🍳</h1>
 
+<b>[Перейти на сайт](https://mighty-thicket-89254.herokuapp.com)</b>
+
 Сайт для тех, кому надоело придумывать что приготовить! (english version)
 
 <div align="center"><img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.43.07.png" alt=""></div>
-
-[Перейти на сайт](https://mighty-thicket-89254.herokuapp.com)
 
 Стек:
 
