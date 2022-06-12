@@ -6,7 +6,7 @@
 
 <div align="center"><img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.43.07.png" alt=""></div>
 
-Стек:
+<b>Стек:</b>
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -14,15 +14,15 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Реализован поиск и фильтрация по рецептам :
+<b>Реализован поиск и фильтрация по рецептам :</b>
 
 <img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.45.06.png" alt="">
 
-Во вкладке "Random recipe" отображаются рандомные рецепты :
+<b>Во вкладке "Random recipe" отображаются рандомные рецепты :</b>
 
 <img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.46.06.png" alt="">
  
-Есть возможность добавлять понравившиеся рецепты в избранное :
+<b>Есть возможность добавлять понравившиеся рецепты в избранное :</b>
 
 <img src="https://github.com/aRusakova/let-s-cook/blob/master/public/img/Снимок%20экрана%202022-06-12%20в%2018.47.04.png" alt="">
 
