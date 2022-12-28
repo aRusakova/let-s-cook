@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/let-s-cook/static/css/main.77b04bbb.css",
+    "main.js": "/let-s-cook/static/js/main.9619aac5.js",
+    "static/media/1626279801_33-kartinkin-com-p-svetlii-fon-dlya-menyu-krasivo-36.png": "/let-s-cook/static/media/1626279801_33-kartinkin-com-p-svetlii-fon-dlya-menyu-krasivo-36.e46709a303ff64a9b8e5.png",
+    "static/media/1611749943_5-p-fon-dlya-reklami-kafe-6.jpeg": "/let-s-cook/static/media/1611749943_5-p-fon-dlya-reklami-kafe-6.cf2ef250fbca375250ae.jpeg",
+    "index.html": "/let-s-cook/index.html",
+    "main.77b04bbb.css.map": "/let-s-cook/static/css/main.77b04bbb.css.map",
+    "main.9619aac5.js.map": "/let-s-cook/static/js/main.9619aac5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77b04bbb.css",
+    "static/js/main.9619aac5.js"
+  ]
+}
